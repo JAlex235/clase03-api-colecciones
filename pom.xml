@@ -7,8 +7,8 @@
   <description>Carga un catalogo de usuarios desde una API publica (randomuser.me) y lo recorre, busca y manipula usando List, Map y Set.</description>
 
   <properties>
-    <maven.compiler.source>11</maven.compiler.source>
-    <maven.compiler.target>11</maven.compiler.target>
+    <maven.compiler.source>25</maven.compiler.source>
+    <maven.compiler.target>25</maven.compiler.target>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
   </properties>
 
