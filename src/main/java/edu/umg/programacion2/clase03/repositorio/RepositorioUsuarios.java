@@ -101,6 +101,15 @@ public class RepositorioUsuarios {
 	 */
 	public Usuario usuarioMasViejoDePais(String pais) {
 		// TODO: reemplazar esta línea por la lógica descrita arriba.
-		throw new UnsupportedOperationException("TODO: completar usuarioMasViejoDePais() en RepositorioUsuarios");
+		List<Usuario> usuariosDelPais = filtrarPorPais(pais);
+		Usuario usuarioMasViejo = null;
+
+		for (Usuario usuario : usuariosDelPais) {
+			if (usuarioMasViejo == null || usuario.getEdad() > usuarioMasViejo.getEdad()) {
+				usuarioMasViejo = usuario;
+			}
+		}
+
+		return usuarioMasViejo;
 	}
 }
